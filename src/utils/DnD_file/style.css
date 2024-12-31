@@ -1,0 +1,158 @@
+.drag-area {
+  padding-block: 45px;
+
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.drag-area ._content {
+  padding: 38px 158px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5.096px;
+  border: 2px dashed #98c275;
+  background: #f8f8ff;
+}
+
+.drag-area .btn_header {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* background: #5256ad; */
+
+  align-items: center;
+  border-radius: 5px !important;
+}
+
+.drag-area.active .btn_header {
+  border: 2px solid #fff;
+  background: #5256ad4d;
+}
+
+.drag-area header {
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: #222;
+}
+.drag-area span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #222;
+  margin: 10px 0 15px 0;
+}
+.drag-area button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #5256ad;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.drag-area .dndImage {
+  /* width: 300px; */
+  margin-inline: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.drag-area img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.drag-area .dnd_delete_icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eb2d2d;
+  color: #fff;
+  font-size: 20px;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+}
+
+.drag-area .file_name_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5.096px;
+  border: 1.274px solid #dbf0ce;
+  background: #fff;
+  padding: 12px;
+}
+
+.drag-area .file_name_container_multi{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Your styles here */
+  .drag-area {
+    padding-inline: 30px;
+  }
+  .drag-area ._content {
+    padding:15px;
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your styles here */
+  .drag-area {
+    padding-inline: 30px;
+  }
+  .drag-area ._content {
+    padding: 38px 20px;
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your styles here */
+  .drag-area {
+    padding-inline: 30px;
+  }
+  .drag-area ._content {
+    padding: 38px 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your styles here */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your styles here */
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your styles here */
+}

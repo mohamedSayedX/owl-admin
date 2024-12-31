@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --global-color: #001529;
+  --global-blue: #1d4396;
+}
+
+.toastCon {
+  z-index: 9999999999999999999 !important;
+}
+
+.jodit-dialog__panel {
+  z-index: 1000000000;
+}
+
+@layer utilities {
+  .table_add_button {
+    @apply whitespace-nowrap bg-primary-blue text-white rounded px-3 hover:-translate-y-1 transition;
+  }
+
+  .t_button {
+    @apply whitespace-nowrap bg-primary-blue text-white rounded px-3  text-center;
+  }
+
+  .t2_button {
+    @apply whitespace-nowrap bg-primary-blue text-white rounded px-5 py-2  text-center;
+  }
+}

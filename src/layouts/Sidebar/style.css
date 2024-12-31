@@ -1,0 +1,23 @@
+
+.sidebar{
+  color: #FFF;
+  height: 100vh;
+  overflow: auto;
+  position: sticky !important;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #1587c9; /* Scrollbar color */
+  border-radius: 10px; /* Round edges */
+  border: 0px solid #f1f1f1; /* Padding around the scrollbar */
+}
